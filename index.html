@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+</head>
+<body>
+   
+
+<p id="sortedArray"></p>
+<p id="concatenatedArray"></p>
+<p id="afterShiftArray"></p>
+
+<script>
+        // 1. Sort a JavaScript Array
+var students = ["Abhishek", "HariNarayan", "Anurag", "Anish"];
+students.sort();
+document.getElementById("sortedArray").innerHTML = "Sorted Array: " + students;
+
+
+        // 2. Concatenate two arrays and store in new array
+var array1 = [1, 2, 3];
+var array2 = [4, 5, 6];
+var combined = array1.concat(array2);
+document.getElementById("concatenatedArray").innerHTML = "Concatenated Array: " + combined;
+
+
+        // 3. Remove the first element from an array
+var names = ["Ravi", "Rohit", "Alok"];
+names.shift();
+document.getElementById("afterShiftArray").innerHTML = "Array after removing first element: " + names;
+</script>
+</body>
+</html>
